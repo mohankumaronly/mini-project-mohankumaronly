@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What You Will Learn - Business Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #2c3e50, #34495e);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background: #fff;
+            color: #333;
+            border-radius: 10px;
+            width: 90%;
+            max-width: 800px;
+            padding: 2rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        .topics {
+            list-style: none;
+            padding: 0;
+            margin: 1.5rem 0;
+        }
+
+        .topics li {
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            margin: 0.5rem 0;
+            padding: 1rem;
+            border-radius: 5px;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .topics li:hover {
+            background-color: #eaf2f8;
+            transform: scale(1.03);
+        }
+
+        .topics li .topic-name {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .topics li .topic-description {
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+            line-height: 1.4;
+            color: #555;
+        }
+
+        .button {
+            display: block;
+            width: 100%;
+            text-align: center;
+            background: #2c3e50;
+            color: #fff;
+            text-decoration: none;
+            padding: 0.8rem;
+            border-radius: 5px;
+            margin-top: 1.5rem;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #1c2833;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>What You Will Learn</h1>
+        <ul class="topics">
+            <li>
+                <span class="topic-name">1. Fundamentals of Business Management</span>
+                <p class="topic-description">Understand the principles of business management, organizational structures, and leadership basics.</p>
+            </li>
+            <li>
+                <span class="topic-name">2. Strategic Planning</span>
+                <p class="topic-description">Learn how to develop and implement effective business strategies for growth and sustainability.</p>
+            </li>
+            <li>
+                <span class="topic-name">3. Financial Management</span>
+                <p class="topic-description">Master budgeting, financial analysis, and decision-making to manage business finances effectively.</p>
+            </li>
+            <li>
+                <span class="topic-name">4. Marketing and Customer Relations</span>
+                <p class="topic-description">Explore modern marketing techniques, customer engagement strategies, and brand management.</p>
+            </li>
+            <li>
+                <span class="topic-name">5. Business Case Studies</span>
+                <p class="topic-description">Analyze real-world case studies to understand challenges and innovative solutions in business management.</p>
+            </li>
+        </ul>
+        <a href="signup.html" class="button">Enroll Now</a>
+    </div>
+
+    <script>
+        // JavaScript to add interactivity for each topic
+        document.querySelectorAll('.topics li').forEach(item => {
+            item.addEventListener('click', () => {
+                alert(item.querySelector('.topic-name').textContent + " selected!");
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What You Will Learn - Game Development</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #ff6f61, #f39c12);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background: #fff;
+            color: #333;
+            border-radius: 10px;
+            width: 90%;
+            max-width: 800px;
+            padding: 2rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        h1 {
+            text-align: center;
+            color: #ff6f61;
+        }
+
+        .topics {
+            list-style: none;
+            padding: 0;
+            margin: 1.5rem 0;
+        }
+
+        .topics li {
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            margin: 0.5rem 0;
+            padding: 1rem;
+            border-radius: 5px;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .topics li:hover {
+            background-color: #fff4e1;
+            transform: scale(1.03);
+        }
+
+        .topics li .topic-name {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .topics li .topic-description {
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+            line-height: 1.4;
+            color: #555;
+        }
+
+        .button {
+            display: block;
+            width: 100%;
+            text-align: center;
+            background: #ff6f61;
+            color: #fff;
+            text-decoration: none;
+            padding: 0.8rem;
+            border-radius: 5px;
+            margin-top: 1.5rem;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #d14936;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>What You Will Learn</h1>
+        <ul class="topics">
+            <li>
+                <span class="topic-name">1. Introduction to Game Development</span>
+                <p class="topic-description">Understand the basics of game development, including core concepts, industry tools, and game engines.</p>
+            </li>
+            <li>
+                <span class="topic-name">2. Getting Started with Unity</span>
+                <p class="topic-description">Learn to navigate and work with Unity, one of the most popular game development platforms, and create simple games.</p>
+            </li>
+            <li>
+                <span class="topic-name">3. Game Design Principles</span>
+                <p class="topic-description">Dive into game mechanics, level design, storytelling, and user experience design to create fun and engaging games.</p>
+            </li>
+            <li>
+                <span class="topic-name">4. Scripting in C# for Game Development</span>
+                <p class="topic-description">Learn the basics of C# programming, focusing on game-specific concepts such as object interaction, movement, and physics.</p>
+            </li>
+            <li>
+                <span class="topic-name">5. Game Asset Creation and Animation</span>
+                <p class="topic-description">Understand how to create and import 2D and 3D game assets, textures, and animations to enhance your games.</p>
+            </li>
+            <li>
+                <span class="topic-name">6. Publishing and Game Monetization</span>
+                <p class="topic-description">Learn the process of testing, debugging, publishing games to different platforms, and understanding game monetization strategies.</p>
+            </li>
+        </ul>
+        <a href="signup.html" class="button">Enroll Now</a>
+    </div>
+
+    <script>
+        // JavaScript to add interactivity
+        document.querySelectorAll('.topics li').forEach(item => {
+            item.addEventListener('click', () => {
+                alert(item.querySelector('.topic-name').textContent + " selected!");
+            });
+        });
+    </script>
+</body>
+</html>

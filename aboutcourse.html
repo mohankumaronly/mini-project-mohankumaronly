@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BKIT Online Courses</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #0056b3;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #004494;
+            padding: 0.5rem 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            padding: 2rem;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .course-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .course-card h2 {
+            margin-top: 0;
+        }
+
+        .course-card button {
+            background-color: #0056b3;
+            color: #fff;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .course-card button:hover {
+            background-color: #003d80;
+        }
+
+        footer {
+            background-color: #0056b3;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to BKIT Online Courses</h1>
+    </header>
+    <nav>
+        <a href="aboutcourse.html">Courses</a>
+        <a href="aboutus.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="container" id="courses">
+        <h2>Our Courses</h2>
+        <div class="course-card">
+            <h2>Web Development</h2>
+            <p>Learn HTML, CSS, JavaScript, and more to build modern websites.</p>
+            <button onclick="enroll('Web Development')">Enroll Now</button>
+        </div>
+        <div class="course-card">
+            <h2>Data Science</h2>
+            <p>Master Python, Machine Learning, and Data Visualization techniques.</p>
+            <button onclick="enroll('Data Science')">Enroll Now</button>
+        </div>
+        <div class="course-card">
+            <h2>Graphic Design</h2>
+            <p>Discover design principles and tools like Photoshop and Illustrator.</p>
+            <button onclick="enroll('Graphic Design')">Enroll Now</button>
+        </div>
+        <div class="course-card">
+            <h2>Graphic Design</h2>
+            <p>Discover design principles and tools like Photoshop and Illustrator.</p>
+            <button onclick="enroll('Graphic Design')">Enroll Now</button>
+        </div>
+        <div class="course-card">
+            <h2>Graphic Design</h2>
+            <p>Discover design principles and tools like Photoshop and Illustrator.</p>
+            <button onclick="enroll('Graphic Design')">Enroll Now</button>
+        </div>
+    </div>
+    <footer id="contact">
+        <p>Contact us at <a href="mailto:info@bkitcourses.com" style="color: #ff0;">info@bkitcourses.com</a></p>
+        <p>&copy; 2024 BKIT Online Courses</p>
+    </footer>
+    <script>
+        function enroll(courseName) {
+            alert(`You have successfully enrolled in the ${courseName} course!`);
+        }
+    </script>
+</body>
+</html>

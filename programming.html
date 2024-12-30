@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What You Will Learn - Programming Course</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #0056b3, #004494);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background: #fff;
+            color: #333;
+            border-radius: 10px;
+            width: 90%;
+            max-width: 800px;
+            padding: 2rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        h1 {
+            text-align: center;
+            color: #0056b3;
+        }
+
+        .topics {
+            list-style: none;
+            padding: 0;
+            margin: 1.5rem 0;
+        }
+
+        .topics li {
+            background: #f4f4f9;
+            border: 1px solid #ddd;
+            margin: 0.5rem 0;
+            padding: 1rem;
+            border-radius: 5px;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .topics li:hover {
+            background-color: #e9f0fb;
+            transform: scale(1.03);
+        }
+
+        .topics li .topic-name {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .topics li .topic-description {
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+            line-height: 1.4;
+            color: #555;
+        }
+
+        .button {
+            display: block;
+            width: 100%;
+            text-align: center;
+            background: #0056b3;
+            color: #fff;
+            text-decoration: none;
+            padding: 0.8rem;
+            border-radius: 5px;
+            margin-top: 1.5rem;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #003d80;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>What You Will Learn</h1>
+        <ul class="topics">
+            <li>
+                <span class="topic-name">1. Introduction to Programming</span>
+                <p class="topic-description">Understand the basics of programming, variables, data types, and control flow.</p>
+            </li>
+            <li>
+                <span class="topic-name">2. Object-Oriented Programming</span>
+                <p class="topic-description">Learn about classes, objects, inheritance, encapsulation, and polymorphism.</p>
+            </li>
+            <li>
+                <span class="topic-name">3. Data Structures and Algorithms</span>
+                <p class="topic-description">Master arrays, linked lists, stacks, queues, sorting, searching, and graph algorithms.</p>
+            </li>
+            <li>
+                <span class="topic-name">4. Advanced Topics</span>
+                <p class="topic-description">Delve into multi-threading, memory management, and advanced problem-solving techniques.</p>
+            </li>
+            <li>
+                <span class="topic-name">5. Project Coding</span>
+                <p class="topic-description">Apply your skills in real-world projects such as web applications, game development, or AI solutions.</p>
+            </li>
+        </ul>
+        <a href="signup.html" class="button">Enroll Now</a>
+    </div>
+
+    <script>
+        // JavaScript to add interactive effects or animations if needed
+        document.querySelectorAll('.topics li').forEach(item => {
+            item.addEventListener('click', () => {
+                alert(item.querySelector('.topic-name').textContent + " selected!");
+            });
+        });
+    </script>
+</body>
+</html>

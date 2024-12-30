@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Explore - BKIT Online</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #3498db, #8e44ad);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background: #fff;
+            color: #333;
+            border-radius: 10px;
+            width: 90%;
+            max-width: 900px;
+            padding: 2rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        h1 {
+            text-align: center;
+            color: #3498db;
+        }
+
+        h2 {
+            color: #3498db;
+            margin-top: 2rem;
+        }
+
+        .content {
+            margin: 2rem 0;
+        }
+
+        .business-courses {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+        }
+
+        .business-course {
+            background: #f4f4f4;
+            border-radius: 8px;
+            padding: 1.5rem;
+            text-align: center;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .business-course:hover {
+            background-color: #ecf0f1;
+            transform: scale(1.05);
+        }
+
+        .business-course h3 {
+            margin-bottom: 1rem;
+            color: #3498db;
+        }
+
+        .business-course p {
+            font-size: 0.9rem;
+            color: #555;
+            line-height: 1.4;
+        }
+
+        .explore-button {
+            display: block;
+            text-align: center;
+            background: #3498db;
+            color: #fff;
+            text-decoration: none;
+            padding: 0.8rem;
+            border-radius: 5px;
+            margin-top: 1.5rem;
+            font-size: 1rem;
+            width: 100%;
+            transition: background-color 0.3s ease;
+        }
+
+        .explore-button:hover {
+            background-color: #2980b9;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Business Explore - BKIT Online</h1>
+
+        <div class="content">
+            <h2>Exploring Business Strategies with BKIT Online</h2>
+            <p>At BKIT Online, we believe in empowering students with the skills, knowledge, and tools necessary to excel in the business world. Our courses are designed to provide hands-on experiences, real-world strategies, and insights into the fast-paced business landscape. Explore how BKIT Online is preparing the next generation of business leaders.</p>
+        </div>
+
+        <div class="business-courses">
+            <div class="business-course">
+                <h3>Entrepreneurship & Startups</h3>
+                <p>Learn the essentials of starting a business, from idea generation to scaling, and how to succeed as an entrepreneur in today's world.</p>
+            </div>
+
+            <div class="business-course">
+                <h3>Business Strategy</h3>
+                <p>Master the art of strategic planning and decision-making, and understand how to position your business for long-term growth.</p>
+            </div>
+
+            <div class="business-course">
+                <h3>Financial Management</h3>
+                <p>Gain a deep understanding of financial principles, including budgeting, financial forecasting, and investment strategies for business success.</p>
+            </div>
+
+            <div class="business-course">
+                <h3>Digital Marketing for Businesses</h3>
+                <p>Learn how to leverage digital marketing tools to reach your target audience, optimize your online presence, and drive revenue growth.</p>
+            </div>
+
+            <div class="business-course">
+                <h3>Leadership & Management</h3>
+                <p>Understand effective leadership techniques, employee management, and how to build high-performance teams in any organization.</p>
+            </div>
+
+            <div class="business-course">
+                <h3>Market Research and Consumer Behavior</h3>
+                <p>Learn how to conduct market research, analyze consumer data, and make informed business decisions based on real insights.</p>
+            </div>
+        </div>
+
+        <a href="signup.html" class="explore-button">Start Your Business Journey Today</a>
+    </div>
+
+    <script>
+        // JavaScript for interactive behavior
+        document.querySelectorAll('.business-course').forEach(course => {
+            course.addEventListener('click', () => {
+                alert(course.querySelector('h3').textContent + " course details selected!");
+            });
+        });
+    </script>
+</body>
+</html>
