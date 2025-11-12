@@ -2,7 +2,7 @@ import os, random, subprocess, datetime
 from plyer import notification
 
 # === CONFIG ===
-REPO_PATH = r"C:\Users\user\OneDrive\Desktop\Development\college_tts_project"
+REPO_PATH = r"C:\Users\user\OneDrive\Desktop\Development\college_mini_project"
 TARGET_FILE = "index.js"  # change this to your main file
 
 # === Realistic comments added to file ===
